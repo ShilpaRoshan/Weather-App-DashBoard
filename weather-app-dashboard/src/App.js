@@ -10,7 +10,7 @@ const history = createBrowserHistory();
 const App = () => {
     return (
         <Router history={history}>
-            <div className="App">
+            <div className="App" data-testid="page-wrapper">
                 <Switch>
                     <Route
                         path="/"

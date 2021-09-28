@@ -74,7 +74,8 @@ const DashBoard = (props) => {
     };
     //this is the function to handle the click the tile which directs to weather-details page of paticular city
     const handleClick = (city) => {
-        history.push(`/weather-details/${city}`);
+        const cityName = city === "My Location" ? currentLocation.name : city;
+        history.push(`/weather-details/${cityName}`);
     };
 
     //This function creates the tile when clicked on search button
