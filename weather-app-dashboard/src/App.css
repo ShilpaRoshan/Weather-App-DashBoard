@@ -163,3 +163,28 @@ h3.city-name {
     flex-direction: column;
     justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+    .dash-board-container {
+        display: block !important;
+    }
+    .tile-wrapper {
+        width: 60vw !important;
+    }
+    .search-button,
+    .search-bar {
+        width: 100% !important;
+    }
+    .city-weather-details {
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+    .first-details-container,
+    .second-details-container {
+        height: unset !important;
+    }
+    .details-wrapper {
+        display: block !important;
+        margin-left: 20%;
+    }
+}
